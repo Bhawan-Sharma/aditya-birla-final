@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="85.438" height="85.438" viewBox="0 0 85.438 85.438">
+  <defs>
+    <filter id="Ellipse_61" x="0" y="0" width="85.438" height="85.438" filterUnits="userSpaceOnUse">
+      <feOffset dy="7" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="4.5" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_1462" data-name="Group 1462" transform="translate(-159.5 -2652.01)">
+    <g transform="matrix(1, 0, 0, 1, 159.5, 2652.01)" filter="url(#Ellipse_61)">
+      <g id="Ellipse_61-2" data-name="Ellipse 61" transform="translate(13.5 6.5)" fill="#c91429" stroke="#fff" stroke-width="1">
+        <circle cx="29.219" cy="29.219" r="29.219" stroke="none"/>
+        <circle cx="29.219" cy="29.219" r="28.719" fill="none"/>
+      </g>
+    </g>
+    <g id="noun-india-gate-782722" transform="translate(13.015 2615.209)">
+      <path id="Path_5860" data-name="Path 5860" d="M200.765,66.548V64.315h-1.117v-1.7h-2.027V58.44h-4.178V57.324h-1.365a3.739,3.739,0,0,0-5.709,0H185v1.117h-4.219v4.178h-2.027v1.7h-1.117v2.234H176.4v3.02h1.241V89.092h8.273v-15.1a3.309,3.309,0,1,1,6.619,0v15.1h8.232V69.609h1.241v-3.02h-1.241Zm.455,2.234h-1.241V88.265h-6.619V73.994a4.137,4.137,0,1,0-8.273,0V88.265h-6.619V68.782h-1.241V67.375h1.241V65.142h1.117v-1.7h2.027V59.268h4.178V58.151h1.075l.124-.248a2.792,2.792,0,0,1,4.467,0l.124.248h1.075v1.117h4.178v4.178h2.027v1.7h1.117v2.234h1.241Z" fill="#fff" stroke="#fff" stroke-width="0.7"/>
+    </g>
+  </g>
+</svg>

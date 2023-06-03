@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="77.533" height="77.533" viewBox="0 0 77.533 77.533">
+  <defs>
+    <filter id="Ellipse_88" x="0" y="0" width="77.533" height="77.533" filterUnits="userSpaceOnUse">
+      <feOffset dy="7" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="4.5" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_1524" data-name="Group 1524" transform="translate(13.5 6.5)">
+    <g transform="matrix(1, 0, 0, 1, -13.5, -6.5)" filter="url(#Ellipse_88)">
+      <g id="Ellipse_88-2" data-name="Ellipse 88" transform="translate(13.5 6.5)" fill="#44583f" stroke="#fff" stroke-width="1">
+        <ellipse cx="25.266" cy="25.266" rx="25.266" ry="25.266" stroke="none"/>
+        <ellipse cx="25.266" cy="25.266" rx="24.766" ry="24.766" fill="none"/>
+      </g>
+    </g>
+    <g id="_47.file" data-name="47.file" transform="translate(16.205 13.38)">
+      <path id="Path_6462" data-name="Path 6462" d="M14.8,1H6.219A3.219,3.219,0,0,0,3,4.219V21.388a3.219,3.219,0,0,0,3.219,3.219H19.1a3.219,3.219,0,0,0,3.219-3.219V8.511Z" transform="translate(-3 -1)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Path_6463" data-name="Path 6463" d="M14,5.292a3.219,3.219,0,0,0,3.219,3.219h4.292L14,1Z" transform="translate(-2.196 -1)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <line id="Line_108" data-name="Line 108" x2="4.489" transform="translate(5.387 12.57)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <line id="Line_109" data-name="Line 109" x2="8.979" transform="translate(5.387 17.958)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    </g>
+  </g>
+</svg>

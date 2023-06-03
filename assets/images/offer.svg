@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="80.922" height="80.922" viewBox="0 0 80.922 80.922">
+  <defs>
+    <filter id="Rectangle_1607" x="0" y="0" width="80.922" height="80.922" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feFlood flood-opacity="0.11"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="offer" transform="translate(-655.137 -2487.863)">
+    <g transform="matrix(1, 0, 0, 1, 655.14, 2487.86)" filter="url(#Rectangle_1607)">
+      <g id="Rectangle_1607-2" data-name="Rectangle 1607" transform="translate(6 6)" fill="#bf9d63" stroke="#fff" stroke-width="2">
+        <rect width="68.922" height="68.922" rx="18" stroke="none"/>
+        <rect x="1" y="1" width="66.922" height="66.922" rx="17" fill="none"/>
+      </g>
+    </g>
+    <path id="_7872171751655473166_1_" data-name="7872171751655473166 (1)" d="M29.887,5,5,29.887M12.111,8.555A3.555,3.555,0,1,1,8.555,5,3.555,3.555,0,0,1,12.111,8.555ZM29.887,26.332a3.555,3.555,0,1,1-3.555-3.555A3.555,3.555,0,0,1,29.887,26.332Z" transform="translate(678.155 2510.881)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  </g>
+</svg>

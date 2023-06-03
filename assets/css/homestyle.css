@@ -1,0 +1,2937 @@
+@import url(./fonts/style.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "PF Handbook Pro Regular";
+}
+
+li,
+a {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 500;
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+  font-family: "PF Handbook Pro Regular";
+}
+.cta-issue{
+    padding: 30px 30px 30px 0px;
+}
+.topheader {
+  display: flex;
+  justify-content: flex-end;
+ 
+}
+
+.topheader .nav_links {
+  background-color: #c7222a;
+  font: normal normal bold 18px/25px PF Handbook Pro;
+}
+.topheader .nav_links .active {
+  background-color: #7f2221;
+  font-family: "PF Handbook Pro Regular";
+  font-size: 14px;
+}
+
+header {  
+  display: flex;
+  justify-content: space-between;
+  background-color: #c7222a;
+  align-items: center;
+  padding: 18px;
+  
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.top-nav .nav_links {
+    list-style: none;
+    margin-top: -6px;
+}
+
+.nav_links li {
+  display: inline-block;
+  padding: 0px 9px;
+}
+
+.nav_links li a {
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+}
+
+.nav_links li a:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+/* arrow */
+.dropbtn .arrow {
+  border: solid #ffffff;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  margin-left: 4px;
+  margin-bottom: 4px;
+}
+.dropbtn .down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.dropbtn:hover .arrow {
+  border: solid #c8142a;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  margin-left: 4px;
+}
+.dropbtn:hover .down {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+/* dropdown navigation */
+.dropbtn {
+  color: white;
+  padding: 10px;
+  font-size: 14px;
+  border: none;
+}
+.dropdown .dropbtn:hover {
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  font-size: 14px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  margin-top: 0px;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 99999;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #ddd;
+}
+.dropdown .dropdown-content:hover {
+  animation: fade 1s ease 2s forwards;
+}
+
+/* dropdown navigation end */
+
+.btntop {
+    background: #f7a600 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    padding: 8px 8px 15px 9px;
+    text-decoration: none;
+    color: black;
+    line-height: 6px;
+    margin-top: -5px;
+    height: 23px;
+}
+
+
+
+.bar {
+  display: flex;
+  justify-content: space-between;
+  background: #99a26f;
+  padding: 7px;
+ 
+}
+.bar h6 {
+  color: #ffffff;
+  font-size: 16px;
+  font-family: "PF Handbook Pro Bold";
+}
+
+.bar2 h6 {
+  background: #c7222a;
+
+  font-size: 16px;
+  font-family: "PF Handbook Pro Bold";
+  letter-spacing: 0px;
+  color: #ffffff;
+  padding: 8px;
+ 
+}
+
+@media all and (max-width: 1100px) {
+  .bar2 h6 {
+    background: #c7222a;
+    font-size: 16px;
+    font-family: "PF Handbook Pro Bold";
+    letter-spacing: 0px;
+    color: #ffffff;
+    padding: 8px;
+    margin: 0;
+    border-top: 1px solid #dbdbdb;
+  }
+}
+
+/* mobile menu css */
+@media all and (max-width: 1100px) {
+  .topheader {
+    display: none;
+  }
+  header {
+    display: none;
+  }
+  .bar {
+    display: none;
+  }
+}
+@media all and (min-width: 1101px) {
+  .mobile-menu {
+    display: none;
+  }
+  .mobile-box {
+    display: none;
+  }
+}
+
+@media all and (max-width: 1100px) {
+  .mobile-menu {
+    display: flex;
+    justify-content: space-between;
+    background-color: #c7222a;
+    align-items: center;
+    padding: 20px;
+  }
+  .mobile-menu .menu-image img {
+    width: 60%;
+  }
+  .burger-icon {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    align-items: center;
+  }
+  .burger-icon .human img {
+    width: 30px;
+  }
+  .burger-icon .burger img {
+    width: 40px;
+  }
+  /* box on click hamburger */
+  .mobile-box {
+    position: absolute;
+    display: none;
+    top: 0;
+    height: 100%;
+  }
+  .mobile-box-inner {
+    display: flex;
+    justify-content: space-between;
+    background-color: #c7222a;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .mobile-box-inner .mobile-box-image img {
+    width: 53%;
+  }
+  .mobile-box-inner .burger-cross img {
+    width: 30px;
+  }
+
+  .topbar-mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: px 0 px 0;
+    background-color: #c7222a;
+  }
+  .drop1-mob .dropbtn {
+    font-size: 14px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 20px 20px;
+    background-color: inherit;
+    font: inherit;
+    margin: 0;
+  }
+
+  .drop1-mob:hover .dropbtn {
+    background-color: #7f2221;
+  }
+  a.dropbtn.active {
+    background: #c7222a;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    width: 100%;
+    margin-top: 20px;
+    left: 0;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+
+    float: right;
+  }
+
+  .dropdown-content .header {
+    background: red;
+    padding: 16px;
+    color: white;
+  }
+
+  .drop1-mob .active {
+    display: block;
+  }
+
+  .drop1-mob:hover .dropdown-content {
+    display: block;
+  }
+  /* Create three equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 100%;
+    padding: 10px;
+    background-color: #ffffff;
+    height: auto;
+  }
+
+  .column a {
+    float: none;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  .column a:hover {
+    background-color: #ddd;
+  }
+
+  .drop1-mob .dropdown-content .column .h31 {
+    font-size: 24px;
+    padding: 0 0 0 10px;
+    line-height: inherit;
+    text-transform: uppercase;
+    color: #da9089 !important;
+  }
+  .drop1-mob .dropdown-content .column .h32 {
+    font-size: 24px;
+    padding: 0 0 0 10px;
+    line-height: inherit;
+    text-transform: uppercase;
+    color: #969f6e !important;
+  }
+  .drop1-mob .dropdown-content .column .h33 {
+    font-size: 24px;
+    padding: 0 0 0 10px;
+    line-height: inherit;
+    text-transform: uppercase;
+    color: #d4ae69 !important;
+  }
+  .drop1-mob .dropdown-content .column .h34 {
+    font-size: 24px;
+    padding: 0 0 0 10px;
+    line-height: inherit;
+    text-transform: uppercase;
+    color: #c7222a !important;
+  }
+
+  .drop1-mob .dropdown-content .column1 {
+    border-left: 7px solid #da9089;
+    margin: 0 0 20px 0;
+  }
+  .drop1-mob .dropdown-content .column2 {
+    border-left: 7px solid #969f6e !important;
+    margin: 0 0 20px 0;
+  }
+  .drop1-mob .dropdown-content .column3 {
+    border-left: 7px solid #d4ae69 !important;
+    margin: 0 0 20px 0;
+  }
+  .drop1-mob .dropdown-content .column4 {
+    border-left: 7px solid #c7222a !important;
+    margin: 0 0 20px 0;
+  }
+  .drop1-mob .dropdown-content .column5 {
+    border-top: 1px solid #ddd;
+    margin: 10px 0 20px 0;
+    padding: 20px;
+  }
+  .drop1-mob .dropdown-content .column6 {
+    border-top: 1px solid #ddd;
+    margin: 10px 0 20px 0;
+    padding: 20px;
+  }
+
+  .mob-menu-links {
+    display: flex;
+    justify-content: flex-start;
+    gap: 4em;
+  }
+}
+/* first banner css starts here */
+#banner-top {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+  #banner-top {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+    .main-banner-sub .main-col {
+    height: 190px !important;
+}
+    .banner-video {
+    height: 72vh !important;
+}
+    
+}
+
+.banner-text h1 {
+  font-size: 70px;
+  font-family: "PF Handbook Pro Bold";
+  letter-spacing: 0px;
+    line-height: 67px;
+}
+.banner-text h1 span {
+  font-size: 70px;
+  font-family: "PF Handbook Pro Bold";
+  letter-spacing: 0px;
+  color: #bb0021;
+}
+.banner-content{
+    height: 55vh;
+}
+@media only screen and (max-width: 600px) {
+  .banner-text h1 {
+    font-size: 60px;
+    font-family: "PF Handbook Pro Bold";
+    letter-spacing: 0px;
+  }
+    .banner-content{
+    height: 70vh;
+}
+  .banner-text h1 span {
+    font-size: 60px;
+    font-family: "PF Handbook Pro Bold";
+    letter-spacing: 0px;
+    color: #bb0021;
+  }
+}
+
+.banner-text p {
+  font-size: 31px;
+    line-height: 35px;
+  font-family: "PF Handbook Pro Regular";
+  letter-spacing: 0px;
+  color: #333333;
+}
+
+.banner-btns {
+  margin-top: 18px;
+}
+
+.banner-btns .a1 {
+    font-size: 18px;
+    font-family: "PF Handbook Pro Regular";
+    letter-spacing: 0px;
+    color: #fafafa;
+    padding: 13px 10px 14px 30px;
+    background: transparent linear-gradient(249deg, #99a26f 0%, #44583f 100%) 0% 0% no-repeat padding-box;
+    box-shadow: 0px 7px 9px #00000029;
+    /* border: 2px solid #44583f; */
+    border-radius: 4px;
+    opacity: 1;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.banner-btns .a3 {
+  font-size: 18px;
+  font-family: "PF Handbook Pro Regular";
+  letter-spacing: 0px;
+  color: #fafafa;
+  padding: 13px 10px 14px 11px;
+  background: transparent linear-gradient(249deg, #99a26f 0%, #44583f 100%) 0% 0% no-repeat padding-box;
+  box-shadow: 0px 7px 9px #00000029;
+  /* border: 2px solid #44583f; */
+  border-radius: 4px;
+  opacity: 1;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.banner-btns .a1 span {
+    font-size: 19px;
+    font-family: "PF Handbook Pro Regular";
+    padding: 0px;
+    display: inline-table;
+    text-align: center;
+    width: 30px;
+    background-color: white;
+    margin-left: 10px;
+    color: #44583f;
+    border-radius: 2px;
+}
+
+.banner-btns .a3 span {
+  font-size: 19px;
+  font-family: "PF Handbook Pro Regular";
+  padding: 0px;
+  display: inline-table;
+  text-align: center;
+  width: 30px;
+  background-color: white;
+  margin-left: 10px;
+  color: #44583f;
+  border-radius: 2px;
+}
+
+.banner-btns .a2 {
+  font-size: 18px;
+    font-family: "PF Handbook Pro Regular";
+    letter-spacing: 0px;
+    color: #fafafa;
+    padding: 11px 25px 11px 25px;
+    background: transparent linear-gradient(249deg, #99a26f 0%, #44583f 100%) 0% 0% no-repeat padding-box;
+    /* border: 2px solid #44583f; */
+    /* border-radius: 4px; */
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .banner-video img {
+    width: 100%;
+  }
+  .banner-text {
+    padding: 20px;
+  }
+}
+
+/* second banner starts here */
+#image-text {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: #fffdf8;
+  padding: 40px 0 80px 0;
+}
+
+.image-image img {
+    height: auto;
+    width: 87%;
+    z-index: 99;
+}
+
+section.hero__section {
+    padding-bottom: 87px;
+}
+@media only screen and (max-width: 600px) {
+  #image-text {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0 20px 0;
+  }
+  .image-image img {
+    height: 260px;
+    width: 100%;
+    z-index: 99;
+    padding: 20px;
+  }
+  .text-text {
+    padding: 20px;
+  }
+}
+
+.text-text h2 {
+  font-size: 35px;
+  font-family: "PF Handbook Pro Bold";
+  letter-spacing: 0px;
+  color: #221f20;
+}
+
+.text-text p {
+    font-size: 19px;
+    font-family: "PF Handbook Pro Regular";
+    margin-top: 10px;
+    letter-spacing: 0px;
+    color: #585858;
+    line-height: 26px;
+}
+.text-text span {
+  padding: 3px 25px 3px 25px;
+  margin: 10px 0 10px 0;
+  background: #c91429 0% 0% no-repeat padding-box;
+  border-radius: 3px;
+  display: inline-block;
+
+  opacity: 1;
+}
+
+/*  main banner with boxes */
+#main-banner {
+  background: url(./images/Rectangle\ 370.jpg);
+  background-repeat: no-repeat;
+  /* background-position: center right; */
+  background-size: cover;
+  padding: 80px 0 80px 0;
+  align-items: center;
+  margin: 10px 10px 0 10px;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .main-banner-text-space {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}
+
+#main-banner .text-text h2 {
+  font-size: 35px;
+  font-family: "PF Handbook Pro Bold";
+  letter-spacing: 0px;
+  color: #ffffff;
+}
+
+#main-banner .text-text p {
+  font-size: 17px;
+  font-family: "PF Handbook Pro Thin";
+  margin-top: 10px;
+  letter-spacing: 0px;
+  color: #ffffff;
+}
+
+#main-banner.text-text span {
+  padding: 3px 25px 3px 25px;
+  margin: 10px 0 10px 0;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border-radius: 3px;
+  display: inline-block;
+  opacity: 1;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .main-banner-sub {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 40px 0 40px 0;
+    align-items: center;
+    gap: 4em;
+  }
+}
+
+.main-banner-sub .main-col {
+    background: #ffffff 0% 0% no-repeat padding-box;
+    /* box-shadow: 0px 3px 30px #0000000d; */
+    /* border-radius: 14px; */
+    height: 133px;
+    width: 100%;
+    padding: 20px 0 20px 20px;
+    box-shadow: 0px 3px 30px #0000000D;
+    border-radius: 14px;
+}
+
+.main-banner-sub .main-col img {
+  margin-top: -50px;
+  height: 70px;
+  width: 70px;
+}
+
+.main-banner-sub .main-col h6 {
+    font-size: 23px;
+    margin-top: -6px;
+    font-family: "PF Handbook Pro Bold";
+    letter-spacing: 0px;
+    color: #000000;
+}
+
+.s_headingg h3 {
+    font-family: "PF Handbook Pro Bold";
+}
+.main-banner-sub .main-col p {
+    font-size: 19px;
+    font-family: "PF Handbook Pro Regular";
+    letter-spacing: 0px;
+    color: #76787b;
+    line-height: 19px;
+}
+/* nps image calculator */
+
+.nps {
+  background: url(./images/Mask\ Group\ 1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  align-items: center;
+  padding: 40px 0px 40px 0px;
+}
+
+.nps-box {
+  display: flex;
+  justify-content: center;
+  gap: 4em;
+  background: url(./images/Mask\ Group\ 3.jpg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 20px 0 20px 0;
+  padding: 20px;
+  align-items: center;
+}
+@media only screen and (max-width: 600px) {
+  .nps-box {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    background: url(./images/Mask\ Group\ 3.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 20px 10px 20px 10px;
+    padding: 20px;
+    align-items: center;
+  }
+}
+
+.nps-box .nps-text h2 {
+  font-size: 35px;
+  font-family: "PF Handbook Pro Bold";
+  letter-spacing: 0px;
+  color: #000000;
+}
+.nps-box .nps-text .sp {
+  padding: 3px 25px 3px 25px;
+  margin: 10px 0 10px 0;
+  background: #c91429 0% 0% no-repeat padding-box;
+  border-radius: 3px;
+  display: inline-block;
+
+  opacity: 1;
+}
+
+.nps-box .nps-text p {
+  font-size: 17px;
+  font-family: "PF Handbook Pro Thin";
+  margin-top: 10px;
+  margin-bottom: 15px;
+  letter-spacing: 0px;
+
+  color: #76787b;
+  letter-spacing: 0px;
+}
+
+.nps-box .nps-text a {
+  background: #c91429 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  border: 2px solid #c8142a;
+  color: #ffffff;
+  border-radius: 4px;
+  font-size: 12px;
+  padding: 8px 20px 8px 20px;
+  font-family: "PF Handbook Pro Regular";
+}
+
+.nps-box .nps-text i {
+  margin-left: 10px;
+}
+@media only screen and (max-width: 600px) {
+  .nps .nps-image img {
+    width: 200px;
+    margin-left: -40px;
+  }
+  .nps-box .nps-text h2 {
+    font-size: 17px;
+    font-family: "PF Handbook Pro Bold";
+    letter-spacing: 0px;
+    color: #000000;
+  }
+  .nps-box .nps-text p {
+    font-size: 12px;
+    font-family: "PF Handbook Pro Thin";
+
+    letter-spacing: 0px;
+
+    color: #76787b;
+    letter-spacing: 0px;
+  }
+}
+
+/* main banner 2 */
+#main-banner2 {
+  background: url(./images/Group\ 1567.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 80px 0 40px 0;
+  align-items: center;
+  margin: 10px 10px 0 10px;
+}
+
+
+
+
+
+#main-banner2 .text-text2 h2 {
+  font-size: 35px;
+  font-family: "PF Handbook Pro Bold";
+  letter-spacing: 0px;
+  color: #ffffff;
+}
+
+#main-banner2 .text-text2 p {
+  font-size: 17px;
+  font-family: "PF Handbook Pro Thin";
+  margin-top: 10px;
+  letter-spacing: 0px;
+  color: #ffffff;
+}
+
+#main-banner2 .text-text2 span {
+  padding: 3px 25px 3px 25px;
+  margin: 10px 0 10px 0;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border-radius: 3px;
+  display: inline-block;
+  opacity: 1;
+}
+
+.main-banner-sub2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 40px 0 40px 0;
+  align-items: center;
+  gap: 3em;
+}
+.main-banner-sub2 .main-col2 {
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 30px #0000000d;
+    border-radius: 8px;
+    height: 100px;
+    width: 100%;
+    padding: 20px 6px 20px 10px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 28px;
+}
+
+.main-banner-sub2 .main-col2 img {
+  height: 65px;
+  width: 65px;
+}
+
+.main-banner-sub2 .main-col2 p {
+    font-size: 18px;
+    font-family: "PF Handbook Pro Regular";
+    letter-spacing: 0px;
+    color: #76787b;
+    line-height: 16px;
+    padding-top: 5px;
+}
+
+
+/* abs boxess main */
+.abs-boxes .main-col3 h6 {
+  font-size: 19px;
+
+  font-family: "PF Handbook Pro Bold";
+  letter-spacing: 0px;
+  color: #000000;
+}
+.abs-boxes {
+  display: flex;
+  justify-content: center;
+  gap: 4em;
+  margin-top: 40px;
+}
+@media only screen and (max-width: 600px) {
+  .abs-boxes {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    gap: 2em;
+    margin-top: 40px;
+    flex-wrap: wrap;
+  }
+}
+
+.abs-boxes .main-col3 {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 30px #0000000d;
+  border-radius: 8px;
+  text-align: center;
+  padding: 24px;
+}
+
+.abs-boxes .main-col3 p {
+  font-size: 17px;
+  font-family: "PF Handbook Pro Thin";
+  letter-spacing: 0px;
+  color: #76787b;
+}
+.abs-main {
+  padding: 60px 0 80px 0;
+  background: transparent linear-gradient(180deg, #f8f8f8 0%, #ffffff00 100%) 0%
+    0% no-repeat padding-box;
+}
+.abs-heading {
+  text-align: center;
+}
+.abs-heading h2 {
+  font-size: 35px;
+  font-family: "PF Handbook Pro Bold";
+  letter-spacing: 0px;
+  color: #000000;
+}
+
+.abs-heading p {
+  font-size: 17px;
+  font-family: "PF Handbook Pro Thin";
+  margin-top: 10px;
+  letter-spacing: 0px;
+  color: #333333;
+}
+
+.abs-heading span {
+  padding: 3px 25px 3px 25px;
+  margin: 10px 0 10px 0;
+  background: #bb0021 0% 0% no-repeat padding-box;
+  border-radius: 3px;
+  display: inline-block;
+  opacity: 1;
+}
+
+.abs-boxes .main-col3 img {
+  height: 65px;
+  width: 65px;
+  margin-top: -50px;
+}
+
+/* testimonials css */
+.testm {
+  text-align: center;
+  padding: 40px 0 80px 0;
+}
+.testm-text h2 {
+  font-size: 35px;
+  font-family: "PF Handbook Pro Bold";
+  letter-spacing: 0px;
+  color: #000000;
+}
+
+.testm-text span {
+  padding: 3px 25px 3px 25px;
+  margin: 10px 0 10px 0;
+  background: #bb0021 0% 0% no-repeat padding-box;
+  border-radius: 3px;
+  display: inline-block;
+  opacity: 1;
+}
+
+.testm-boxes {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 2em;
+  margin-top: 40px;
+
+  overflow-x: scroll;
+
+  animation: slideshow 10s linear infinite;
+}
+@keyframes slideshow {
+  100% {
+    transform: translateX(-33.33%);
+  }
+}
+.testm-boxes::-webkit-scrollbar {
+  display: none;
+}
+
+.testm-boxes .main-col-4 {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 30px #0000000d;
+  padding: 20px 40px 20px 40px;
+  border-radius: 8px;
+}
+
+.main-col-4 {
+  flex: 0 0 auto;
+}
+.main-col-4 .testm-text-star h6 {
+  font-size: 19px;
+
+  font-family: "PF Handbook Pro Bold";
+  letter-spacing: 0px;
+  color: #000000;
+}
+
+.main-col-4 .testm-p p {
+  font-size: 17px;
+  font-family: "PF Handbook Pro Thin";
+  letter-spacing: 0px;
+  color: #76787b;
+}
+
+.main-col-4 {
+  display: flex;
+  justify-content: center;
+  gap: 4em;
+  align-items: center;
+}
+
+/* footer */
+
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1em;
+
+  background-color: #201e19;
+  padding: 40px 40px 40px 40px;
+  margin: -10px;
+  position: relative;
+  z-index: 10;
+}
+@media only screen and (max-width: 600px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.ul-footer {
+  list-style: none;
+  line-height: 2rem;
+  margin-top: 5px;
+}
+
+.ul-footer a {
+  text-decoration: none;
+  font-size: 17px;
+  font-family: "PF Handbook Pro Thin";
+  letter-spacing: 0px;
+  color: #ffffff;
+}
+
+.copy-text p {
+  font-size: 17px;
+  font-family: "PF Handbook Pro Thin";
+  letter-spacing: 0px;
+  color: #ffffff;
+}
+.copy-phone p {
+  font-size: 17px;
+  font-family: "PF Handbook Pro Thin";
+  letter-spacing: 0px;
+  color: #ffffff;
+}
+
+.footer-part-1 h6,
+.footer-part-2 h6,
+.footer-part-3 h6,
+.footer-part-4 h6,
+.footer-part-5 h6,
+.footer-part-6 h6,
+.footer-part-7 h6 {
+  font-size: 16px;
+
+  font-family: "PF Handbook Pro Bold";
+  letter-spacing: 0px;
+  color: #ffffff;
+}
+
+/* footer 2 */
+.footer2 {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1em;
+
+  background-color: #58595b;
+  padding: 40px 40px 40px 40px;
+  margin: -10px;
+    position: relative;
+    z-index: 10;
+}
+@media only screen and (max-width: 600px) {
+  .footer2 {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  gap: 30em;
+  background-color: #58595b;
+  padding: 20px 40px 20px 40px;
+  border-top: 1px solid #e2e2e2;
+}
+@media only screen and (max-width: 600px) {
+  .copyright {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+}
+.copy-social-text {
+  display: flex;
+  justify-content: center;
+}
+
+.copy-social-ul {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  margin-left: 25px;
+  align-items: center;
+  list-style-type: none;
+}
+.bar h6 {
+    line-height: 13px;
+    font-size: 21px;
+}
+
+header {
+    padding-left: 60px;
+}
+
+.bar {
+    height: 27px;
+    padding-left: 60px;
+}
+
+
+.copy-text p {  
+  color: #ffffff;
+}
+
+.copy-phone p {
+  color: #ffffff;
+}
+ul {
+    margin-bottom: 0px;
+}
+
+body {
+    margin: 10px 10px 0 10px;
+}
+.footer2 {
+    margin: -10px;
+}
+.copyright {
+    margin: -10px;
+}
+
+.breadcrumbs {
+    background-color: #8d1218;
+    background-image: url(images/innerpagemarks.png);
+    /* background-position: center center; */
+    /* background-size: 117%; */
+    margin-top: -9px;
+    /* margin-bottom: 34px; */
+    padding-left: 60px;
+    padding-top: 12px;
+    color: #fff;
+    height: 101px;
+    padding-right: 60px;
+}
+h3.headings {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.breadcrumbs p {
+    margin-bottom: 0px;
+}
+
+span.arrow12 {
+    margin-left: 5px;
+    margin-right: 4px;
+    position: relative;
+    top: 0px;
+    font-size: 13px;
+}
+
+span.firs_7744 {
+    font-weight: 100;
+    color: #dfd8d8;
+}
+
+section.about__top_contt12 {
+    background: #FFFAEF;
+    text-align: center;
+    padding: 36px 0px;
+}
+.footer {
+   
+	
+    margin: -10px;
+}
+.bar2 h6 {
+    padding-left: 60px;
+}
+
+.about__1s p {
+    letter-spacing: 0px;
+    color: #393939;
+    font-size: 24px;
+    font-family: "PF Handbook Pro Thin";
+    line-height: 31px;
+}
+
+.list__inggsd li {
+    color: #000;
+}
+
+.list__inggsd li {
+    LIST-STYLE: NONE;
+}
+
+span.tick_0 {
+    border: 1px solid #C7222A;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    border-radius: 42px;
+    text-align: center;
+    font-size: 11px;
+    line-height: 23px;
+    color: #C7222A;
+    margin-right: 7px;
+    position: relative;
+    top: 0px;
+}
+
+span.tick_0 {
+    float: left;
+}
+span.conts122 {
+    color: #393939;
+    font-family: font-family: "PF Handbook Pro Thin";
+    font-family: "PF Handbook Pro Thin";
+    font-size: 21px;
+}
+
+span.sp.sf {
+    padding: 3px 25px 3px 25px;
+    margin: 0px 0 10px 0;
+    background: #c91429 0% 0% no-repeat padding-box;
+    border-radius: 3px;
+    display: inline-block;
+    opacity: 1;
+}
+.cont__eytsd h3 {
+    font-size: 35px;
+    font-family: "PF Handbook Pro Bold";
+    letter-spacing: 0px;
+    color: #000000;
+}
+
+.cont__eytsd p {
+    color: #393939;
+   
+    font-family: "PF Handbook Pro Thin";
+    font-size: 21px;
+    line-height: 24px;
+}
+.list__inggsd li {
+    float: left;
+    width: 100%;
+    margin-top: 16px;
+}
+section.the_scham {
+    padding: 86px 0;
+}
+
+.list__inggsd h3 {
+    font-weight: 600;
+    font-size: 25px;
+}
+span.conts122 {
+    float: left;
+    width: 90%;
+    line-height: 21px;
+    padding-left: 7px;
+}
+.faq__centerw h3{
+
+    font-size: 35px;
+    font-family: "PF Handbook Pro Bold";
+    letter-spacing: 0px;
+    color: #000000;
+}
+
+.faq__centerw {
+    width: 100%;
+    text-align: center;
+}
+
+
+
+.accordion .card-header:after {
+    font-family: 'FontAwesome';  
+    content: "\f068";
+    float: right; 
+	box-shadow: 3px 3px 6px #00000029;
+    opacity: 1;
+    border: #fff;
+    width: 29px;
+    height: 29px;
+    text-align: center;
+    border-radius: 78%;
+    line-height: 30px;
+    color: #99A26F;
+	 background: #FFFFFF 0% 0% no-repeat padding-box;
+}
+.accordion .card-header.collapsed:after {
+    content: "\f067";
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 3px 3px 6px #00000029;
+    opacity: 1;
+    border: #fff;
+    width: 29px;
+    height: 29px;
+    text-align: center;
+    border-radius: 78%;
+    line-height: 30px;
+    color: #99A26F;
+}
+div#accordion {
+    width: 100%;
+}
+div#accordion a{
+    color: #000;
+}
+
+.se__omn12 {
+    margin-bottom: 14px;
+}
+
+
+.card-header {
+    /* background: #F6F7F2; */
+    background: #F6F7F2 0% 0% no-repeat padding-box;
+    opacity: 1;
+    border: none;
+}
+
+.faqsection .card.mb-0 {
+    border: none;
+    background: transparent;
+}
+
+.card-header{
+    /* background: #F6F7F2; */
+    background: #F6F7F2 0% 0% no-repeat padding-box;
+    opacity: 1;
+    border: none;
+    border-left: 5px solid #99A26F;
+}
+
+.card-header:first-child {
+    border-radius: 5px;
+}
+
+div#accordion a {
+    /* color: #000; */
+    font-size: 22px;
+    color: #221F20;
+}
+
+.se__omn12 {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 4px #0000001C;
+    opacity: 1;
+    border: 1px solid #00000008;
+    border-radius: 8px;
+}
+div#accordion {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+}
+
+.cont__accor p {
+    color: #393939;
+    font-family: "PF Handbook Pro Thin";
+    font-size: 21px;
+    line-height: 24px;
+}
+
+.faq__centerw {
+    padding-bottom: 27px;
+}
+
+p.show__more887 {
+    float: left;
+    width: 100%;
+    text-align: center;
+    /* color: #000; */
+}
+
+p.show__more887 a {
+    width: 175px;
+    height: 39px;
+    border: 2px solid #44583F;
+    border-radius: 5px;
+    opacity: 1;
+    display: inline-block;
+    color: #44583F;
+    text-align: center;
+    padding-top: 2px;
+    font-size: 20px;
+}
+
+p.show__more887 {
+    margin-top: -51px;
+    margin-bottom: 20px;
+}
+span.iconsd {
+    position: relative;
+    left: -6px;
+    top: -1px;
+}
+
+.its__offer_22 {
+    width: 55%;
+    height: 114px;
+    background: #8D1118 0% 0% no-repeat padding-box;
+    border-radius: 15px;
+    opacity: 1;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: #fff;
+    font-size: 23px;
+}
+
+.s__00s {
+    float: left;
+}
+
+span.icn__00sde {
+    width: 89px;
+    height: 89px;
+    background: #F7A600 0% 0% no-repeat padding-box;
+    border: 2px solid #FFFFFF;
+    opacity: 1;
+    display: inline-block;
+    border-radius: 62%;
+    line-height: 82px;
+    position: relative;
+    left: -41px;
+    top: 12px;
+}
+
+.s__list__99s p {
+    font-size: 28px;
+    padding-top: 35px;
+    position: relative;
+    left: -40px;
+}
+
+.its__offer_22 {
+    margin-top: 24px;
+    margin-bottom: 58px;
+}
+
+section.howto__apply {
+    background: url(images/innerpagemarks.png);
+    padding: 75px 0px;
+}
+
+
+.s__777s1d p {
+    color: #393939;
+    font-family: "PF Handbook Pro Regular";
+    font-size: 19px;
+    line-height: 20px;
+}
+
+p.apply__noww a {
+    width: 143px;
+    height: 36px;
+    background: #C91429 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border: 2px solid #C8142A;
+    opacity: 1;
+    display: inline-block;
+    text-align: center;
+    border-radius: 5px;
+    padding-top: 5px;
+}
+.s__li5454 {
+    padding-left: 22px;
+    padding-top: 9px;
+}
+
+.how__100s {
+    background: #fff;
+    border: 1px solid #00000017;
+    border-radius: 7px;
+    box-shadow: 0px 0px 8px 0px #00000030;
+    padding: 44px 24px;
+}
+
+span.top__left_corner {
+    background: #99a26f;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    position: absolute;
+    left: 16px;
+    top: 0px;
+    border-radius: 9px 2px 106px 2px;
+}
+
+
+.text__savingg table {
+  max-width: 100%;
+}
+tr{
+	background: #fff;
+}
+.text__savingg tr:nth-child(odd) {
+    background-color: #f6f7f2;
+}
+
+.text__savingg th {
+  background-color: #555;
+  color: #fff;
+}
+
+.text__savingg th,
+td {
+  text-align: left;
+  padding: 0.5em 1em;
+}
+
+.taxt__saving__77844s {
+    width: 100%;
+}
+
+.taxt__saving__77844s table {
+    width: 100%;
+    background: #F6F7F2;
+    padding: 5px;
+    border-radius: 2px;
+}
+.text__savingg  td {
+    border: 1px solid #00000014;
+    /* border: 1px solid #707070; */
+    /* opacity: 0.21; */
+    color: #3939399e;
+    font-size: 18px;
+}
+.text__savingg  th {
+    border: 1px solid #00000014;
+    /* border: 1px solid #707070; */
+    /* opacity: 0.21; */
+}
+.text__savingg th {
+    background-color: #99A26F;
+    color: #000;
+    text-shadow: none;
+    letter-spacing: 0px;
+    font-size: 19px;
+}
+span.right__buttom__corner {
+    background: #f7a600;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    position: absolute;
+    right: 16px;
+    top: inherit;
+    border-radius: 88px 0px 7px 0px;
+    bottom: 0px;
+}
+
+
+.text__savingg th:first-child{
+	border-radius: 7px 0px 0px 5px;
+		
+}.text__savingg th:last-child{
+	border-radius: 0px 7px 7px 0px;
+		
+}
+
+.text__savingss {
+    margin-left: -11px;
+}
+.text__savingss h3 {
+    font-size: 35px;
+    font-family: "PF Handbook Pro Bold";
+    letter-spacing: 0px;
+    color: #000000;
+}
+
+.text__savingss {
+    padding-bottom: 22px;
+}
+
+.main__all_887s {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000014;
+    border: 1px solid #C6C6C6;
+    border-radius: 16px;
+    opacity: 1;
+    margin-top: 18px;
+    margin-bottom: 62px;
+    padding: 29px 33px;
+}
+
+.conte__99er h3 {
+    margin-bottom: -4px;
+}
+
+.user__iconsd img {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    left: -8px;
+    top: -5px;
+}
+.s___list__user {
+    padding-bottom: 18px;
+}
+
+.s__lef__coner p {
+    color: #393939;
+    font-family: "PF Handbook Pro Thin";
+    font-size: 21px;
+    line-height: 24px;
+    width: 93%;
+}
+.conte__99er p {
+    color: #393939;
+    font-family: "PF Handbook Pro Thin";
+    font-size: 20px;
+    line-height: 24px;
+}
+section.howto__apply {
+    background: url(../images/innerpagemarks.png);
+    padding: 75px 0px;
+}
+
+
+.s__999eer2 {
+    height: 179px;
+    background: #FFFAEF 0% 0% no-repeat padding-box;
+    border-radius: 14px;
+    opacity: 1;
+}
+section.s___7744de {
+    background: url("../images/list__774.jpg");
+    background-size: cover;
+}
+
+section.welcome__i__09 {
+    background: url("../images/about__adita.jpg");
+    background-size: 123% 111%;
+}
+
+.im7755sw.d44ws img {
+    position: relative;
+    left: -89px;
+    height: auto;
+    width: 149%;
+    margin-bottom: -52px;
+    top: -2px;
+}
+
+.how__100s.nh__0774411 span.top__left_corner {
+    bottom: 0px;
+    top: inherit;
+    border-radius: 0px 74px 0px 9px;
+    width: 142px;
+}
+
+section.welcome__i__09 {
+    padding: 106px 0;
+    /* color: #fff; */
+}
+
+.how__100s.nh__0774411 span.right__buttom__corner {
+    top: 0px;
+    /* border: indianred; */
+    bottom: inherit;
+    border-radius: 0px 8px 0px 89px;
+    width: 121px;
+}
+.s__li5454 {
+    padding-left: 0px;
+    padding-top: 9px;
+    width: 87%;
+}
+
+.welcome__i__09 h2 {
+    color: #fff;
+    line-height: 35px;
+}
+span.righ__07740 {
+    position: absolute;
+    top: 182px;
+    z-index: -1;
+}
+span.righ__07740right {
+    position: absolute;
+    right: 0px;
+    top: 200px;
+    z-index: -1;
+}
+
+.
+
+section.hero__section {
+    padding-bottom: 112px;
+}
+
+section {
+    float: left;
+    width: 100%;
+}
+section.s___7744de {
+    color: #fff;
+    padding-top: 93px;
+}
+
+section.s___7744de .main-banner-text2.text-text2 p {
+    font-size: 19px;
+    letter-spacing: 0px;
+    line-height: 25px;
+    margin-top: 25px;
+}
+
+span.sp.sf.dfd88 {
+    background: #fff;
+}
+section.s___7744de .main-banner-text2.text-text2 h2 {
+    font-size: 35px;
+    font-family: "PF Handbook Pro Bold";
+    letter-spacing: 0px;
+    line-height: 39px;
+}
+section.welcome_to__aaditya_birla {
+    float: left;
+    width: 100%;
+    background: #fffcf7;
+    padding: 78px 6px;
+}
+.welcome__i__09 .main-banner-text.text-text p {
+    color: #fff;
+    line-height: 25px;
+    font-size: 19px;
+    margin-bottom: 96px;
+}
+
+.abs-main .abs-heading p {
+    font-size: 19px;
+    font-family: "PF Handbook Pro Regular";
+    margin-top: 10px;
+    letter-spacing: 0px;
+    color: #585858;
+    line-height: 21px;
+}
+
+section.abs-main {
+    background: #f8f8f8;
+}
+
+.abs-main .main-col3 {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 30px #0000000D;
+    border-radius: 14px;
+    opacity: 1;
+    text-align: center;
+}
+.main-col3 img {
+    width: 84px;
+    margin-top: -39px;
+}
+.abs-main .main-col3 {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 30px #0000000D;
+    border-radius: 14px;
+    opacity: 1;
+    text-align: center;
+    height: 130px;
+}
+
+
+
+.s__0744588 {
+    padding-top: 70px;
+}
+.abs-main .main-col3 h3 {
+    font-family: "PF Handbook Pro Bold";
+    font-size: 23px;
+    letter-spacing: 0px;
+}
+
+.testm-boxes {
+    padding-bottom: 28px;
+    padding-top: 24px;
+}
+
+section.testm {
+    padding-top: 59px;
+}
+
+.side_navvv a:nth-child(2) {
+    background: #c02128;
+    width: 100%;
+    text-decoration: none;
+}
+
+.side_navvv a {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background: #c7222a;
+    padding-left: 14px;
+    position: relative;
+    right: -129px;
+    transition: .4s;
+    text-decoration: none;
+}
+.side_navvv {
+    position: fixed;
+    background: transparent;
+    right: 0;
+    z-index: 9;
+    width: 168px;
+    height: 123px;
+    top: 41%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    transform: translate(0,-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.side_navvv a span {
+  padding-left: 14px;
+}
+.side_navvv a:hover{
+  right: 0;
+  color: #fff;
+  text-decoration: none;
+}
+
+.s__list__desktop {
+    float: none;
+    width: 70%;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 17px 14px #0000000F;
+    border: 1px solid #EBEBEB;
+    border-radius: 12px;
+    opacity: 1;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.s__list__desktop .linksss {
+    display: inline-block;
+    width: 24%;
+    text-align: center;
+    border-right: 1px solid #00000052;
+    /* padding: inherit; */
+}
+
+.fixed__stickyyy__77445 {
+    position: fixed;
+    bottom: 45px;
+    width: 99%;
+    /* margin-left: auto; */
+}
+
+
+
+span.icon__0s74 {
+    background: #fff;
+    height: 34px;
+    display: inline-block;
+    text-align: center;
+    width: 40px;
+    border-radius: 5px;
+    padding-left: 6px;
+    padding-top: 4px;
+}
+
+.linksss:hover span.op__744{
+	color: #fff;
+}
+
+
+
+
+@media screen and (min-width:320px) and (max-width:767px) {
+    .linksss:hover{
+background: #BA0021 0% 0% no-repeat padding-box !important;
+border-radius: 8px;
+opacity: 1;
+	}
+	.fixed__stickyyy__77445 {
+    display: none;
+}
+	
+	span.righ__07740 {
+    display: none;
+}
+	
+	span.righ__07740right {
+    display: none;
+}
+	
+	body {
+    width: 100%;
+    margin: 0px;
+    -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+	
+	.howto__apply .col-md-6.offset-3 {
+    margin: 0px;
+}
+	
+	.hero__section .row {
+    margin: 0px;
+}
+	
+	.hero__section .banner-text {
+    padding-top: 4px;
+}
+	
+	.banner-text p {
+    font-size: 24px;
+    font-family: "PF Handbook Pro Regular";
+    letter-spacing: 0px;
+    color: #333333;
+    line-height: 23px;
+    margin-bottom: 31px;
+}
+	.image-image img {
+    height: auto;
+    width: 74%;
+    z-index: 99;
+    padding: 15px;
+    margin-left: auto;
+}
+	
+	.image-image {
+    text-align: center;
+}
+	
+	section.welcome_to__aaditya_birla {
+    float: left;
+    width: 100%;
+    background: #fffcf7;
+    padding: 78px 6px;
+    margin-top: -60px;
+}
+	.text-text h2 {
+    font-size: 24px;
+    font-family: "PF Handbook Pro Bold";
+    letter-spacing: 0px;
+    color: #221f20;
+}
+	.text-text p {
+    font-size: 18px;
+    font-family: "PF Handbook Pro Regular";
+    margin-top: 10px;
+    letter-spacing: 0px;
+    color: #585858;
+    line-height: 22px;
+}
+	
+	section.welcome_to__aaditya_birla {
+    float: left;
+    width: 100%;
+    background: #fffcf7;
+    padding: 44px 6px;
+    margin-top: -60px;
+}
+	
+	section.welcome__i__09 {
+    padding: 36px 0;
+    /* color: #fff; */
+}
+	
+	section.welcome__i__09 {
+    background: url("../images/bac__mobi.jpg");
+    background-size: cover;
+}
+	
+	.welcome__i__09 .main-banner-text.text-text p {
+    color: #fff;
+    line-height: 25px;
+    font-size: 19px;
+    margin-bottom: 0px;
+}
+	
+	.main-col {
+    margin-bottom: 38px;
+}
+ .row {
+    margin: 0px;
+}
+	.welcome__i__09 h2 {
+    color: #fff;
+    line-height: 22px;
+    font-size: 22px;
+}
+	
+	.im7755sw.d44ws img {
+    position: relative;
+    left: -108px;
+    height: auto;
+    width: 115%;
+    margin-bottom: -41px;
+    top: -36px;
+}
+	
+	.s__li5454 {
+    padding-left: 0px;
+    padding-top: 8px;
+    width: 100%;
+}
+	p.apply__noww a {
+    width: 100%;
+    height: 41px;
+    background: #C91429 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border: 2px solid #C8142A;
+    opacity: 1;
+    display: inline-block;
+    text-align: center;
+    border-radius: 5px;
+    padding-top: 8px;
+}
+	
+	.how__100s.nh__0774411 span.top__left_corner {
+    bottom: 0px;
+    top: inherit;
+    border-radius: 0px 74px 0px 9px;
+    width: 80px;
+    height: 76px;
+}
+	.how__100s.nh__0774411 span.right__buttom__corner {
+    top: 0px;
+    /* border: indianred; */
+    bottom: inherit;
+    border-radius: 0px 8px 0px 89px;
+    width: 109px;
+    height: 121px;
+}
+	
+	section.s___7744de {
+    background: url("../images/bac__774412.jpg");
+    background-size: cover;
+}
+	
+	.main-banner-sub2 .col-md-4 {
+    float: left;
+    width: 50%;
+    padding: 6px;
+}
+	
+	.main-banner-sub2 .main-col2 {
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 30px #0000000d;
+    border-radius: 8px;
+    height: 157px;
+    width: 100%;
+    padding: 20px 6px 20px 10px;
+    display: inherit;
+    align-items: center;
+    margin-bottom: 2px;
+}
+	
+	.main-banner-sub2 .main-col2 img {
+    height: 65px;
+    width: 65px;
+    margin-bottom: -9px;
+    margin-top: -13px;
+    position: relative;
+    left: -10px;
+}
+	.main-banner-sub2 .main-col2 p {
+    font-size: 18px;
+    font-family: "PF Handbook Pro Regular";
+    letter-spacing: 0px;
+    color: #3c4148;
+    line-height: 19px;
+    padding-top: 5px;
+    float: left;
+    width: 100%;
+}
+	.main-banner-text2.text-text2 {
+    padding-top: 215px;
+    margin-bottom: -28px;
+}
+	section.s___7744de .main-banner-text2.text-text2 p {
+    font-size: 19px;
+    letter-spacing: 0px;
+    line-height: 25px;
+    margin-top: 0px;
+}
+	
+	.banner-text h1 {
+    font-size: 50px!important;
+        line-height: 47px;
+
+    font-family: "PF Handbook Pro Bold";
+    letter-spacing: 0px;
+}
+	.banner-text h1 span {
+    font-size: 50px;
+    font-family: "PF Handbook Pro Bold";
+    letter-spacing: 0px;
+    color: #bb0021;
+}
+	
+	.banner-text p {
+    font-size: 21px;
+    font-family: "PF Handbook Pro Regular";
+    letter-spacing: 0px;
+    color: #333333;
+    line-height: 23px;
+    margin-bottom: 31px;
+}
+	
+	.text-text {
+    padding: 0px;
+}
+	
+	.banner-text {
+    padding: 0px;
+}
+	
+	.s__0744588 .col-md-3 {
+    float: left;
+    width: 50%;
+    padding: 8px;
+}
+	
+	.abs-main .main-col3 h3 {
+    font-family: "PF Handbook Pro Bold";
+    font-size: 17px;
+    letter-spacing: 0px;
+}
+	
+	.main-col3 p {
+    line-height: 14px;
+}
+	
+	.abs-main .main-col3 {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 30px #0000000D;
+    border-radius: 14px;
+    opacity: 1;
+    text-align: center;
+    height: 126px;
+    margin-bottom: 39px;
+}
+	
+	.testm-text h2 {
+    font-size: 34px;
+    font-family: "PF Handbook Pro Bold";
+    letter-spacing: 0px;
+    color: #000000;
+    width: 77%;
+    margin-left: auto;
+    margin-right: auto;
+}
+	
+	.main-banner-text.text-text {
+    padding-left: 17px;
+}
+	
+	.copyright {
+    margin: 0px;
+    padding: 18px;
+    gap: 0;
+}
+	
+	.footer {
+    margin: 0px;
+}
+	
+	.footer2 {
+    margin: 0px;
+}
+	.copyright {
+    margin: 0px;
+    padding: 18px;
+    gap: 0;
+}
+	
+	.hero__section .container {
+    padding: 0px;
+}
+	
+	.topbar-mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: px 0 px 0;
+    background-color: #c7222a;
+}
+	
+	
+@media all and (max-width: 1100px) {
+  .mobile-menu {
+    display: flex;
+    justify-content: space-between;
+    background-color: #c7222a;
+    align-items: center;
+    padding: 20px;
+  }
+  .mobile-menu .menu-image img {
+    width: 60%;
+  }
+  .burger-icon {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    align-items: center;
+  }
+  .burger-icon .human img {
+    width: 30px;
+  }
+  .burger-icon .burger img {
+    width: 40px;
+  }
+  /* box on click hamburger */
+  .mobile-box {
+    position: absolute;
+    display: none;
+    top: 0;
+    height: 100%;
+  }
+  .mobile-box-inner {
+    display: flex;
+    justify-content: space-between;
+    background-color: #c7222a;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .mobile-box-inner .mobile-box-image img {
+    width: 53%;
+  }
+  .mobile-box-inner .burger-cross img {
+    width: 30px;
+  }
+
+  .topbar-mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: px 0 px 0;
+    background-color: #c7222a;
+  }
+  .drop1-mob .dropbtn {
+    font-size: 14px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 20px 20px;
+    background-color: inherit;
+    font: inherit;
+    margin: 0;
+  }
+
+  .drop1-mob:hover .dropbtn {
+    background-color: #7f2221;
+  }
+  a.dropbtn.active {
+    background: #c7222a;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    width: 100%;
+    margin-top: 20px;
+    left: 0;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+
+    float: right;
+  }
+
+  .dropdown-content .header {
+    background: red;
+    padding: 16px;
+    color: white;
+  }
+
+  .drop1-mob .active {
+    display: block;
+  }
+
+  .drop1-mob:hover .dropdown-content {
+    display: block;
+  }
+  /* Create three equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 100%;
+    padding: 10px;
+    background-color: #ffffff;
+    height: auto;
+  }
+
+  .column a {
+    float: none;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  .column a:hover {
+    background-color: #ddd;
+  }
+
+  .drop1-mob .dropdown-content .column .h31 {
+    font-size: 24px;
+    padding: 0 0 0 10px;
+    line-height: inherit;
+    text-transform: uppercase;
+    color: #da9089 !important;
+  }
+  .drop1-mob .dropdown-content .column .h32 {
+    font-size: 24px;
+    padding: 0 0 0 10px;
+    line-height: inherit;
+    text-transform: uppercase;
+    color: #969f6e !important;
+  }
+  .drop1-mob .dropdown-content .column .h33 {
+    font-size: 24px;
+    padding: 0 0 0 10px;
+    line-height: inherit;
+    text-transform: uppercase;
+    color: #d4ae69 !important;
+  }
+  .drop1-mob .dropdown-content .column .h34 {
+    font-size: 24px;
+    padding: 0 0 0 10px;
+    line-height: inherit;
+    text-transform: uppercase;
+    color: #c7222a !important;
+  }
+
+  .drop1-mob .dropdown-content .column1 {
+    border-left: 7px solid #da9089;
+    margin: 0 0 20px 0;
+  }
+  .drop1-mob .dropdown-content .column2 {
+    border-left: 7px solid #969f6e !important;
+    margin: 0 0 20px 0;
+  }
+  .drop1-mob .dropdown-content .column3 {
+    border-left: 7px solid #d4ae69 !important;
+    margin: 0 0 20px 0;
+  }
+  .drop1-mob .dropdown-content .column4 {
+    border-left: 7px solid #c7222a !important;
+    margin: 0 0 20px 0;
+  }
+  .drop1-mob .dropdown-content .column5 {
+    border-top: 1px solid #ddd;
+    margin: 10px 0 20px 0;
+    padding: 20px;
+  }
+  .drop1-mob .dropdown-content .column6 {
+    border-top: 1px solid #ddd;
+    margin: 10px 0 20px 0;
+    padding: 20px;
+  }
+
+  .mob-menu-links {
+    display: flex;
+    justify-content: flex-start;
+    gap: 4em;
+  }
+}
+/* first banner css starts here */
+#banner-top {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+  #banner-top {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+.banner-text h1 {
+  font-size: 70px;
+  font-family: "PF Handbook Pro Bold";
+  letter-spacing: 0px;
+}
+.banner-text h1 span {
+  font-size: 70px;
+  font-family: "PF Handbook Pro Bold";
+  letter-spacing: 0px;
+  color: #bb0021;
+}
+@media only screen and (max-width: 600px) {
+  .banner-text h1 {
+    font-size: 60px;
+    font-family: "PF Handbook Pro Bold";
+    letter-spacing: 0px;
+  }
+  .banner-text h1 span {
+    font-size: 60px;
+    font-family: "PF Handbook Pro Bold";
+    letter-spacing: 0px;
+    color: #bb0021;
+  }
+}
+
+.banner-text p {
+  font-size: 30px;
+  font-family: "PF Handbook Pro Regular";
+  letter-spacing: 0px;
+  color: #333333;
+}
+
+.banner-btns {
+  margin-top: 18px;
+}
+
+.banner-btns .a1 {
+  font-size: 14px;
+  font-family: "PF Handbook Pro Thin";
+  letter-spacing: 0px;
+  color: #fafafa;
+  padding: 8px 16px 8px 16px;
+  background: transparent linear-gradient(249deg, #99a26f 0%, #44583f 100%) 0%
+    0% no-repeat padding-box;
+  box-shadow: 0px 7px 9px #00000029;
+  /* border: 2px solid #44583f; */
+  border-radius: 4px;
+  opacity: 1;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.banner-btns .a1 span {
+    font-size: 15px;
+    font-family: "PF Handbook Pro Regular";
+    padding: 0px;
+    display: inline-table;
+    text-align: center;
+    width: 23px;
+    background-color: white;
+    margin-left: 10px;
+    color: #44583f;
+    border-radius: 2px;
+}
+
+/* .banner-btns .a2 {
+  font-size: 12px;
+  font-family: "PF Handbook Pro Bold";
+  letter-spacing: 0px;
+  color: #44583f;
+  padding: 8px 16px 8px 16px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 2px solid #44583f;
+  border-radius: 4px;
+  text-decoration: none;
+} */
+
+@media only screen and (max-width: 600px) {
+  .banner-video img {
+    width: 100%;
+  }
+  .banner-text {
+    padding: 20px;
+  }
+}
+
+.mobile-box {
+    background: red;
+    position: absolute;
+    z-index: 99999;
+    width: 100%;
+}
+	
+	
+.mobile_footbbbar {
+  height: 74px;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  background: #c7222a;
+  bottom: 0;
+}
+
+.foot_barr_container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  color: #ffffffad;
+  font-size: 13px;
+  letter-spacing: 0.3px;
+}
+
+.mobile_footbbbar{
+  display: flex;
+  align-items: center;
+ 
+}
+.linksss p {
+  margin: 0;
+}
+
+.banner-text p {
+    font-size: 21px;
+    
+}
+	
+	.banner-text h1 span {
+    font-size: 50px;
+   
+}
+	.welcome__i__09 .main-banner-text.text-text {
+    padding-top: 187px;
+}
+	.burger i.fa.fa-bars {
+    color: #fff;
+}
+}
+
+@media screen and (min-width:767px) and (max-width:3000px) {
+	.mobile_footbbbar {
+    display: none;
+}
+	
+	nav.top-nadgsdgsd {
+    display: none;
+}
+}
+
+
+.icon__0s74 img {
+    width: 36px;
+    padding-right: 11px;
+}
+
+.linksss {
+    padding: 6px 0;
+}
+
+.s__list__desktop .linksss:last-child{
+	border-right: none;
+		
+}
+
+
+.topheader ul.nav_links {
+    border-bottom: 1px solid #ffffff73;
+}
+
+.topheader .nav_links li {
+    border-left: 1px solid #ffffff73;
+}
+
+
+
+
+.fixed__stickyyy__77445 {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    /* margin-left: auto; */
+    background: #c7222a;
+    margin-left: -10px;
+    z-index: 999999;
+    padding-top: 9px;
+    padding-bottom: 6px;
+}
+
+
+.s__list__desktop {
+    float: none;
+    width: 70%;
+    background: transparent!important;
+    /* box-shadow: 0px 17px 14px #0000000F; */
+    border: none;
+    border-radius: 12px;
+    opacity: 1;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.icon__0s74 img {
+    width: 32px!important;
+    padding-right: 14px;
+}
+
+
+span.icon__0s74 {
+    background: #fff;
+    height: 34px;
+    display: inline-block;
+    text-align: center;
+    width: 35px;
+    border-radius: 5px;
+    padding-left: 7px;
+    padding-top: 4px;
+}
+
+span.op__744 {
+    color: #fff;
+    font-size: 17px;
+}
+
+
+
+.linksss:hover .op__744{
+	color: #000!important;
+}
+
+span.icon__0s74 {
+    border: 1px solid #00000036;
+}
+
+section.hero__section {
+    padding-bottom: 19px;
+}
+
+.copyright {
+    padding-bottom: 65px;
+}
+.bar2 {
+    position: relative;
+
+}
+.s_0s05 li {
+    list-style: none;
+    font-size: 19px;
+}
+a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+span.s_09sww12 {
+    padding-left: 0px!important;
+}
+
+span.s_09sww12 img {
+    width: 18px;
+    position: relative;
+    left: -3px;
+}
+
+.s_09sww img {
+    width: 14px;
+    position: relative;
+    top: -3px;
+}
+
+span.ytgh img {
+    width: 23px;
+}
+@media screen and (min-width:320px) and (max-width:767px) {
+	nav.top-nadgsdgsd {
+    background: #99A26F;
+}
+	
+.top-nadgsdgsd ul.nav_links {
+    width: 1073px;
+    overflow-x: scroll;
+}
+	
+	nav.top-nadgsdgsd {
+    width: 100%;
+    overflow-x: scroll;
+}
+	
+		.s774sddss img {
+    width: 31px!important;
+}
+}
+
+.banner-image{
+  width: 650px;
+  height: 450px;
+}
+
+@media screen and (min-width:320px) and (max-width:767px) {
+	.banner-image {
+    width: 200px;
+    height: 200px;
+}
+    .bar2 {
+        position: inherit;
+}
+    .carousel-inner{
+        position: relative;
+    width: 100%;
+    overflow: hidden;
+    z-index: -9;
+    }
+}
+
+.banner-wrapper{
+  position: relative;
+}
+
+
+
+
+
+.carousel-indicators li {
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  background-color: gray;
+}
+
+/* Active indicator style */
+.carousel-indicators .active {
+  background-color: #c91429;
+}
+
+.social_icons ul li {
+  list-style: none;
+  display: inline-block
+}
+
+.social_icons ul {
+  margin: 0;
+}
+
+  .social_icons ul li a {
+      text-decoration: none;
+      transition: all .2s ease-in-out;
+  }
+
+  .icon-button {
+    background-color: #000;
+    border-radius: 2.3rem;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 2.0rem;
+    height: 2.3rem;
+    line-height: 2.3rem;
+    margin: 0 3px;
+    position: relative;
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 2.3rem;
+}
+
+    .icon-button i {
+        background: none;
+        color: #929292;
+        height: 2.3rem;
+        left: 0;
+        line-height: 2.3rem;
+        position: absolute;
+        top: 0;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+        width: 2.3rem;
+        z-index: 10;
+    }
+
+.icon-button {
+    cursor: pointer;
+    font-size: 1.7rem;
+    line-height: 2.3rem;
+    text-align: center;
+}
+
+    .icon-button span {
+        border-radius: 0;
+        display: block;
+        height: 0;
+        left: 75%;
+        margin: 0;
+        position: absolute;
+        top: 75%;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+        width: 0;
+    }
+
+    .icon-button:hover span {
+        width: 2.3rem;
+        height: 2.3rem;
+        border-radius: 2.3rem;
+        margin: -1.7rem;
+    }
+
+.twitter span {
+    background-color: #4099ff;
+}
+
+.facebook span {
+    background-color: #3B5998;
+}
+
+.youtube span {
+    background-color: #e32c28;
+}
+
+.linkedin span {
+    background-color: #007bb6;
+}
+
+.icon-button .icon-twitter {
+    color: #4099ff;
+}
+
+.icon-button .icon-facebook {
+    color: #3B5998;
+}
+
+.icon-button .icon-google-plus {
+    color: #db5a3c;
+}
+
+.icon-button:hover .fa-facebook, .icon-button:hover .fa-twitter, .icon-button:hover .fa-youtube-play, .icon-button:hover .fa-linkedin, .icon-button:hover .icon-google-plus {
+    color: white;
+}
+
+input:focus {
+  outline: none;
+}
+select:focus {
+  outline: none;
+}
+textarea:focus {
+  outline: none;
+}
+
+.banner-video{
+  height: 65vh;
+}
+.gray-bold-p{
+  color: #393939;
+      font-family: "PF Handbook Pro Thin";
+      font-size: 21px;
+      line-height: 24px;
+      font-weight: bold;
+}
+
+.ul-footer p{
+  font-size: 18px;
+font-family: "PF Handbook Pro Bold";
+letter-spacing: 0px;
+color: #ffffff;
+}
+
+.pop-div{
+  height: 130px;
+  overflow-y: scroll;
+}
+
+#open-nps {
+  background-color: #76787B;;
+  color: white;
+}
+
+#open-nps-green:enabled {
+  
+}
+
+.open-nps-cat-button{
+  border: none;
+padding: 6px 25px 6px 25px;
+font-size: 19px;
+border-radius: 4px;
+background-color: #76787B;;
+  color: white;
+}
+
+.open-nps-cat-button.enabled{
+  background-color: #99A26F;
+}
+
+
+.open-nps-button{
+  border: none;
+padding: 6px 25px 6px 25px;
+font-size: 19px;
+border-radius: 4px;
+background-color: #99A26F;
+  color: white;
+}
+
+@media screen and (min-width:320px) and (max-width:767px) {
+	.banner-btns .a2 {
+    font-size: 14px;
+    font-family: "PF Handbook Pro Regular";
+    letter-spacing: 0px;
+    color: #fafafa;
+    padding: 8px 16px 8px 16px;
+    background: transparent linear-gradient(249deg, #99a26f 0%, #44583f 100%) 0% 0% no-repeat padding-box;
+    /* border: 2px solid #44583f; */
+    border-radius: 4px;
+    text-decoration: none;
+  }
+}

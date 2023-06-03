@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="85.438" height="85.438" viewBox="0 0 85.438 85.438">
+  <defs>
+    <filter id="Ellipse_66" x="0" y="0" width="85.438" height="85.438" filterUnits="userSpaceOnUse">
+      <feOffset dy="7" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="4.5" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_1472" data-name="Group 1472" transform="translate(-159.5 -2782.602)">
+    <g transform="matrix(1, 0, 0, 1, 159.5, 2782.6)" filter="url(#Ellipse_66)">
+      <g id="Ellipse_66-2" data-name="Ellipse 66" transform="translate(13.5 6.5)" fill="#8d1118" stroke="#fff" stroke-width="1">
+        <circle cx="29.219" cy="29.219" r="29.219" stroke="none"/>
+        <circle cx="29.219" cy="29.219" r="28.719" fill="none"/>
+      </g>
+    </g>
+    <g id="_4890325231594941302" data-name="4890325231594941302" transform="translate(184.352 2799.455)">
+      <path id="Path_6995" data-name="Path 6995" d="M3,26.148l2.973-4.8A9.321,9.321,0,0,1,13.749,17H21.3a4.588,4.588,0,0,1-4.574,4.574H14.435" transform="translate(0 1.866)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_6996" data-name="Path 6996" d="M16.292,21.574H25.44l1.372-1.83A6.824,6.824,0,0,1,32.3,17h0l-3.088,5.489a9.286,9.286,0,0,1-8.119,4.8h0A27.241,27.241,0,0,0,6,31.866H6" transform="translate(0.431 1.866)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <circle id="Ellipse_110" data-name="Ellipse 110" cx="4.09" cy="4.09" r="4.09" transform="translate(19.36 7.83)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_6997" data-name="Path 6997" d="M20,7.774A4.006,4.006,0,1,0,16,12a4.589,4.589,0,0,0,1.715-.343" transform="translate(1.292)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    </g>
+  </g>
+</svg>

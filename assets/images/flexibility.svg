@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="80.922" height="80.922" viewBox="0 0 80.922 80.922">
+  <defs>
+    <filter id="Rectangle_1607" x="0" y="0" width="80.922" height="80.922" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feFlood flood-opacity="0.11"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="flexibility" transform="translate(-655.137 -2487.863)">
+    <g transform="matrix(1, 0, 0, 1, 655.14, 2487.86)" filter="url(#Rectangle_1607)">
+      <g id="Rectangle_1607-2" data-name="Rectangle 1607" transform="translate(6 6)" fill="#44583f" stroke="#fff" stroke-width="2">
+        <rect width="68.922" height="68.922" rx="18" stroke="none"/>
+        <rect x="1" y="1" width="66.922" height="66.922" rx="17" fill="none"/>
+      </g>
+    </g>
+    <path id="_12285554151582807279" data-name="12285554151582807279" d="M30.106,5.652a1.441,1.441,0,0,0-1.888-1.888l-23.6,9.983a1.441,1.441,0,0,0,.142,2.706l7.5,2.281a4.323,4.323,0,0,1,2.877,2.877l2.282,7.5a1.441,1.441,0,0,0,2.706.142ZM27.095,1.11A4.323,4.323,0,0,1,32.76,6.775l-9.983,23.6a4.323,4.323,0,0,1-8.116-.426l-2.282-7.5a1.441,1.441,0,0,0-.959-.959l-7.5-2.282A4.323,4.323,0,0,1,3.5,11.093Z" transform="translate(678.611 2511.441)" fill="#fff" stroke="#42563e" stroke-width="1" fill-rule="evenodd"/>
+  </g>
+</svg>
