@@ -4487,7 +4487,7 @@ section.ombusdsom.mb-5 .row {
 .terms_consdtion input {
   margin-top: 4px;
   margin-right: 9px;
-  -webkit-appearance: checkbox;
+  
   transform: scale(1.2) !important;
 
 }
