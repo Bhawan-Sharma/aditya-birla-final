@@ -10,19 +10,20 @@
     <link rel="stylesheet" href="assets/css/styles.css" />
     <link rel="stylesheet" href="assets/fonts/style.css" />
   <title>Aditya Birla Group</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
   <style>
   .plus{
-    background-image: url("./assets/images/lofoclosed.svg");
-    width:20px;
-    height:20px;
+    background-image: url("./assets/images/logo0open.svg");
+    width: 25px;
+    height: 25px;
     background-repeat:no-repeat;
 }
 
 .plus.minus{
-    background-image: url("./assets/images/logo0open.svg");
-    width:20px;
-    height:20px;
+    background-image: url("./assets/images/lofoclosed.svg");
+    width: 25px;
+    height: 25px;
     background-repeat:no-repeat;
 }
 #submit-button-1:enabled {
@@ -801,17 +802,9 @@
                       </div>
                       <div class="terms_consdtion">
 
-                        <span >
-                          <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+                        <span >   
                           <p><div class="plus" style="margin-top: -14px;
                             margin-right: 10px;"></div></p>
-                          <script>
-                            $(".plus").click(function(){
- $(this).toggleClass("minus")  ; 
-})
-                          </script>
-
-
                         </span>
                         <!-- <input type="checkbox" name="" id="" required> -->
                         <p>You hereby authorize ABSLPML and its authorized representative to contact you on the given contact details to know your requirements although you are registered in the DND (Do Not Disturb) / DNC (Do Not Call) registry and you also agree to the terms of use and privacy policy.</p>
@@ -905,8 +898,11 @@
 						  
                       </div>
                       <div class="terms_consdtion">
-                        
-                        <input type="checkbox" name="" id="" required>
+                        <span >   
+                          <p><div class="plus" style="margin-top: -14px;
+                            margin-right: 10px;"></div></p>
+                        </span>
+                        <!-- <input type="checkbox" name="" id="" required> -->
                         <p>You hereby authorize ABSLPML and its authorized representative to contact you on the given contact details to know your requirements although you are registered in the DND (Do Not Disturb) / DNC (Do Not Call) registry and you also agree to the terms of use and privacy policy.</p>
                       </div>
 
@@ -1483,7 +1479,11 @@
           </div>
       
       </div>
-
+      <script>
+        $(".plus").click(function(){
+    $(this).toggleClass("minus")  ; 
+    })
+      </script>
 			
   </body>
 <script src="assets/js/jquery.slim.min.js"></script>
@@ -1567,4 +1567,5 @@
       }
     });
   </script>
+
 </html>
