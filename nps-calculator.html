@@ -12,6 +12,7 @@
 	  <link rel="stylesheet" href="assets/css/owl.css">
     <link rel="stylesheet" href="assets/fonts/style.css" />
     <title>Aditya Birla Group</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <style>
 
 @media only screen and (max-width: 600px) {
@@ -19,6 +20,22 @@
     margin-right: 1rem !important;
   }
 }
+.plus{
+        background-image: url("./assets/images/logo0open.svg");
+        width: 25px;
+        height: 25px;
+        background-repeat:no-repeat;
+    }
+    
+    .plus.minus{
+        background-image: url("./assets/images/lofoclosed.svg");
+        width: 25px;
+        height: 25px;
+        background-repeat:no-repeat;
+    }
+    #submit-button-1:enabled {
+        background-color: #99a26f;
+    }
     </style>
   </head>
 
@@ -1475,7 +1492,11 @@
               </div>
               <div class="col-md-12">
                 <div class="terms_consdtion">
-                  <input type="checkbox" name="" id="whatsAppCheck" required>
+                  <span >   
+                    <p><div class="plus" style="margin-top: -14px;
+                      margin-right: 10px;"></div></p>
+                  </span>
+                  <!-- <input type="checkbox" name="" id="whatsAppCheck" required> -->
                   <p>You hereby authorize ABSLPML and its authorized representative to contact you on the given contact details to know your requirements although you are registered in the DND (Do Not Disturb) / DNC (Do Not Call) registry and you also agree to the terms of use and privacy policy.</p>
                 </div>
               </div>
@@ -1969,6 +1990,11 @@
           </div>
       
       </div>
+      <script>
+        $(".plus").click(function(){
+    $(this).toggleClass("minus")  ; 
+    })
+      </script>
   </body>
   <script src="assets/js/jquery.slim.min.js"></script>
   <script src="assets/js/bootstrap.bundle.min.js"></script>
